@@ -53,6 +53,7 @@ def train(
     current_date = datetime.now()
     date_string =current_date.strftime("%d-%b-%Y_(%H:%M:%S)")
     RUN_DIR = PROJECT_ROOT / "run" / name / date_string
+    RUN_DIR.mkdir(parents=True, exist_ok=True)
     with open(RUN_DIR / "config.json", "w") as fjson:
         json.dump(current_params, fjson, cls=EnhancedJSONEncoder)
 
