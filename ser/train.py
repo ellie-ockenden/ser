@@ -45,4 +45,4 @@ def val_epoch(epoch, validation_dataloader, model, device):
 def train_model(epochs, training_dataloader, validation_dataloader, model, optimizer, device):
     for epoch in range(epochs):
         train_batch(epoch, training_dataloader,model, optimizer, device)
-        val_epoch(epoch,validation_dataloader, model, optimizer, device)
+        val_epoch(epoch,validation_dataloader, model, device)
