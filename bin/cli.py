@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
-import datetime
+from datetime import datetime
 
 from ser.model import make_model
 from ser.transforms import transform
